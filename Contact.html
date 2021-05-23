@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+
+    <title>Aura Watches | About Us</title>
+	
+	<link rel = "icon" href ="pictures/logo1.png" type = "image/x-icon"> 
+	
+		<style>
+* {font-family: 'Oxanium', cursive; scroll-behavior:smooth; }
+body {background-image:url(pictures/Cover-contact.jpg); background-repeat:no-repeat; background-size:cover;}
+.container-fluid {padding:0px; margin:0px;}
+.header1 {height:140px; width:100%; position:fixed; top:0px; transition:0.5s;  z-index:2;}
+.header2 {height:140px; width:100%; position:fixed; top:0px;  transition:0.5s;  z-index:2; background-color:#000; border-bottom:2px solid #fff; margin-top:-70px;}
+.responsive-head {display:none;}
+.mini-head {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:0; }
+.mini-head1 {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:1;}
+.head-logo {height:50px; margin-top:-10px; }
+.header-element {width:300px; position:absolute; left:50%; margin-left:-150px; }
+.heading{font-weight:bold; text-align:center; color:#fff; display:inline-block; line-height:35px; margin-left:20px;}
+.left {float:left;}
+.nav{position:absolute; left:-350px; top:70px; margin-left:50%; text-align:center;}
+.nav ul li {list-style-type:none; width:150px; line-height:70px; Font-size:18px; color:#fff; font-weight:bold;}
+.nav ul li a {transition:0.5s; color:#fff;}
+.nav ul li a:hover {text-decoration:none;}
+.nav ul li ul{padding:0px;}
+.nav ul li ul{display:none;}
+.nav ul li a:hover{color:#a7701d;}
+.nav ul li:hover ul{display:block;}
+.nav .nav-effect li{ margin-left:-10px; line-height:50px; padding-left:20px; text-align:left; width:200px; background-color:#232323; height:50px; font-size:15px;}
+.nav ul li ul li:hover{transition:0.7s; display:block; background-color:#000; color:#fff; border-bottom:2px solid #fff; box-sizing:border-box;}
+
+@media only screen and (max-width:1024px) { 
+.nav{width:700px; position:absolute; left:80px; top:70px;  text-align:center;}
+.nav ul li {list-style-type:none; width:auto; padding-right:20px; line-height:70px; Font-size:16px; color:#fff; font-weight:bold;}	
+.contact form {width:80% !important; margin-left:10% !important;}		
+.contact input {margin-top:20px !important; margin-left:0% !important;}		
+.contact select {margin-left:0% !important; display:block; height:40px; width:200px; padding-left:10px; background:none; color:#000; border:1px solid #232323; border-radius:5px; margin-top:20px;}	
+.contact textarea{margin-left:0% !important; width:90%;}
+
+}
+
+@media only screen and (max-width:600px) { 
+ #header {display:none;}
+ .responsive-head {display:block; height:70px; width:100%; background-color:#000; position:fixed; top:0px; z-index:1;}
+ .res-d {width:300px; position:absolute; left:10%;}
+ .responsive-head img {height:45px; padding:0px;}
+ .responsive-head h4 {line-height:50px; margin-left:10px;}
+ .dropdown {position:absolute; right:5%;}
+ .dropdown button{font-size:30px; background:none; border:none; margin-top:15px;}
+ .dropdown button open{font-size:30px; background:none; border:none; margin-top:15px;}
+ .dropdown-menu {margin-left:-100px; margin-top:20px; background-color:#232323;}
+ .dropdown-menu li a {color:#fff;}
+ .contact form{width:70% !important; margin-left:15% !important;}
+ .contact input {width:95% !important;}
+ .contact select {width:95% !important;}
+ .contact textarea {height:200px !important;}
+ .locator {padding-bottom:50px;}
+ .locator .follow p {display:block !important;}
+ .locator .follow a {margin-bottom:30px;}
+ footer p{font-size:12px !important;}
+}
+.contact {padding-top:15%; padding-bottom:100px;}
+.contact form{background-color:white; width:50%; height:650px; margin-left:25%; padding:5%; padding-top:0px; border-radius:10px;}
+.contact label {margin-top:2%; font-weight:bold; font-size:22px;}	
+.contact form h1 {padding-top:10%; font-weight:bold; height:100px; text-align:center;}	
+.contact input {height:40px; width:250px; padding-left:10px; background:none; color:#000; border:1px solid #232323; border-radius:5px; outline:none; font-size:15px; margin-top:50px; margin-right:1%; margin-left:20px;}		
+.contact input:nth-child(3) {margin-left:0%;}		
+.contact select {margin-left:20px; display:block; height:40px; width:200px; padding-left:10px; background:none; color:#000; border:1px solid #232323; border-radius:5px; margin-top:20px;}	
+.contact textarea{margin-left:20px; background:none; color:#000; border:1px solid #232323; padding:10px; border-radius:5px; resize: none; outline:none; font-size:15px; margin-top:20px;}
+.contact .button {width:150px; background-color:#000; color:#fff; margin-top:20px;}
+.locator {color:#fff; overflow:hidden; width:100%; padding-top:50px; background-color:none; padding-bottom:50px; }
+.locator h3 {color:#a7701d; padding-bottom:10px;} 
+.locator h4 a {font-weight:bold; transition:0.5s; color:#fff; padding-bottom:20px;} 
+.locator h4 a:hover {font-size:22px; color:#a7701d; text-decoration:none;} 
+.locator p a {font-size:15px; color:#fff; transition:0.5s;} 
+.locator p a:hover {font-size:16px; color:#a7701d; text-decoration:none;} 
+.locator col-xs-12 {margin-bottom:10px;} 
+.locator iframe {width:100%; height:300px;} 
+.locator .follow p {font-size:20px; display:inline;}
+.locator .follow a {margin-top:10px; width:40px; height:40px; background-color:#232323; text-align:center; line-height:40px; border-radius:50%; color:#fff; transition:0.5s; text-decoration:none;}
+.locator .follow a:hover {font-size:15px; border:2px solid #232323; background:none; color:#a7701d; }
+
+
+footer {background-color:#232323; height:70px; width:100%; border-top:2px solid #fff; }
+footer p {line-height:68px; text-align:center; color:#fff; padding:0; margin:0px;}
+footer span {color:#a7701d;}
+
+	</style>
+
+	</head>
+	
+	<body>
+	
+	
+	<div class="responsive-head">
+		<div class="col-xs-12 res-d">
+			<a href="home.html"><img class="responsive-logo"src="pictures/logo.png"></a>
+			<h4 class="heading">Aura Watches</h4>	
+		</div>
+		
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+			<ul class="dropdown-menu">
+				<li><a href="home.html#myCarousel">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="home.html#locator">Store Locator</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		
+	<header class="header1" id="header">
+	
+			<script>
+				window.onscroll = function() {myFunction()};
+				function myFunction() {
+					if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) 
+						{
+					document.getElementById("header").className = "header2";
+					document.getElementById("mini-head").className = "mini-head1";
+					}
+					else 
+						{
+					document.getElementById("header").className = "header1";
+					document.getElementById("mini-head").className = "mini-head";
+					}
+						}
+			</script>
+					
+		<div class="container-fluid">
+						
+							
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="header-element">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h2 class="heading">Aura Watches</h2>	
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-11 col-sm-6 col-xs-12 ">
+				
+				<div id="mini-head" class="col-xs-12 mini-head">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h3 class="heading">Aura Watches</h3>	
+				</div>	
+				
+				<div class="nav">
+					<ul>
+						<li class="left"><a href="home.html">Home</a></li>
+						<li class="left"><a href="products.html">Products</a></li>
+						<li class="left"><a href="home.html#locator">Store Locator</a></li>
+						<li class="left"><a href="About.html">About Us</a>
+							<ul  class="nav-effect">
+								<li>History</li>
+								<li>Brands</li>
+							</ul>		
+						</li>
+						<li class="left"><a href="contact.html">Contact</a></li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</header>
+		
+		
+		
+	<div class="contact">
+		<form action="mailto:sabirqureshi104@gmail.com" method="post" >
+			<h1>Contact Form</h1>
+				<input id="name" type="text" placeholder="Your Name">
+				<input id="email" type="email" placeholder="Your Email">
+				<select id="subject">
+					<option selected>Select Subject</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+				<textarea id="message" rows="10" cols="60" placeholder="Type your Message..."></textarea>
+				<input class="button" type="Submit" value="submit">
+		</form>
+	</div>
+	
+	
+	<div class="locator"  id="locator">
+		<div class="container">
+			<div class="col-lg-6 col-sm-6 col-xs-12">
+				<h3>Address</h3>
+				<p><a href="https://goo.gl/maps/jYQ62Wg1a3RH4f7t9" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Progressive Center, suite # 202-203, <br/>30-A Shahrah-e-Faisal Rd, Karachi, 75400<br/>V37F+8Q PECHS, Karachi</a></p>
+				<p><a href="tel:(021)555778524" target="_blank"><i class="glyphicon glyphicon-phone"></i>&nbsp;&nbsp; Phone:  (021) 555 778 524</a></p>
+				<p><a href="fax:(021)553664954" target="_blank"><i class="fa fa-fax"></i>&nbsp;&nbsp; Fax: (021) 553 664 954</a></p>
+				<p><a href="mailto:Contact@aura-watches.com" target="_blank"><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp; Email: Contact@aura-watches.com</a></p>
+				<div class="follow">
+					<p>Follow Us &nbsp;&nbsp;</p>
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-sm-6 col-xs-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14480.068593130243!2d67.0743981!3d24.8632639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42acc4507358b160!2sAptech%20Computer%20Education%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1583855069108!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+	
+		
+		
+		
+		
+	<footer>
+		<p>Copyright © 2020 <span>AuraWatches. </span> All Right Reserved.</p>
+	</footer>
+
+	</body>
+		
+</html>

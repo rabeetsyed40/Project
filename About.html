@@ -1,0 +1,418 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+
+    <title>Aura Watches | About Us</title>
+	
+	<link rel = "icon" href ="pictures/logo1.png" type = "image/x-icon"> 
+	
+		<style>
+* {font-family: 'Oxanium', cursive; scroll-behavior:smooth;}
+.container-fluid {padding:0px; margin:0px;}
+.header1 {height:140px; width:100%; position:fixed; top:0px; transition:0.5s;  z-index:2;}
+.header2 {height:140px; width:100%; position:fixed; top:0px;  transition:0.5s;  z-index:2; background-color:#000; border-bottom:2px solid #fff; margin-top:-70px;}
+.responsive-head {display:none;}
+.mini-head {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:0; }
+.mini-head1 {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:1;}
+.head-logo {height:50px; margin-top:-10px; }
+.header-element {width:300px; position:absolute; left:50%; margin-left:-150px; }
+.heading{font-weight:bold; text-align:center; color:#fff; display:inline-block; line-height:35px; margin-left:20px;}
+.left {float:left;}
+.nav{position:absolute; left:-350px; top:70px; margin-left:50%; text-align:center;}
+.nav ul li {list-style-type:none; width:150px; line-height:70px; Font-size:18px; color:#fff; font-weight:bold;}
+.nav ul li a {transition:0.5s; color:#fff;}
+.nav ul li a:hover {text-decoration:none;}
+.nav ul li ul{padding:0px;}
+.nav ul li ul{display:none;}
+.nav ul li a:hover{color:#a7701d;}
+.nav ul li:hover ul{display:block;}
+.nav .nav-effect li{ margin-left:-10px; line-height:50px; padding-left:20px; text-align:left; width:200px; background-color:#232323; height:50px; font-size:15px;}
+.nav ul li ul li:hover{transition:0.7s; display:block; background-color:#000; color:#fff; border-bottom:2px solid #fff; box-sizing:border-box;}
+
+@media only screen and (max-width:1024px) { 
+.nav{width:700px; position:absolute; left:80px; top:70px;  text-align:center;}
+.nav ul li {list-style-type:none; width:auto; padding-right:20px; line-height:70px; Font-size:16px; color:#fff; font-weight:bold;}	
+.filter {display:none;}
+.history p {text-align:center; padding-right:50px;}
+.history h2 {text-align:center; padding-left:0px !important; }
+.brands {height:500px !important;}
+.brands .slider .carousel-control {background:none; margin-left:85%; margin-top:24% !important; margin-right:5%; color:white;width:5%;}
+.technology .row {margin-top:0px !important;}
+.technology .col-sm-12{margin-top:30px;}
+}
+
+@media only screen and (max-width:768px) {
+.brands {height:400px !important;}
+.brands .slider .carousel-control {background:none; margin-left:85%; margin-top:-20% !important; margin-right:5%; color:white;width:5%;}
+
+
+}
+
+@media only screen and (max-width:600px) { 
+ #header {display:none;}
+ .responsive-head {display:block; height:70px; width:100%; background-color:#000; position:fixed; top:0px; z-index:1;}
+ .res-d {width:300px; position:absolute; left:10%;}
+ .responsive-head img {height:45px; padding:0px;}
+ .responsive-head h4 {line-height:50px; margin-left:10px;}
+ .dropdown {position:absolute; right:5%;}
+ .dropdown button{font-size:30px; background:none; border:none; margin-top:15px;}
+ .dropdown button open{font-size:30px; background:none; border:none; margin-top:15px;}
+ .dropdown-menu {margin-left:-100px; margin-top:20px; background-color:#232323;}
+ .dropdown-menu li a {color:#fff;}
+
+.history .achievement, .history .motive{margin-left:0px !important;}
+.history h1 {padding-top:150px !important; }
+.history h2 {text-align:center; padding-left:0px !important; }
+.history p {text-align:center !important; padding:10px !important;  }
+.history .his-logo {display:none;}
+.technology .row img{float:none !important; margin:0px auto; display:block;}
+.technology .row h2{margin-top:20px; text-align:center;}
+.brands {height:300px !important;}
+.brands .slider img {filter:none !important;}
+.brands .slider .carousel-control {background:none; margin-left:85%; margin-top:-20% !important; margin-right:5%; color:white;width:5%;}
+footer {font-size:12px;}
+.team-res {padding-left:20px; padding-right:20px;}
+footer p{font-size:12px !important;}
+ }	
+
+.history {background-color:#2f2f2f; width:100%; padding-bottom:100px; }
+.history .motive{margin-left:50px;}
+.history .achievement{text-align:center; margin-left:200px; }
+.history h1 {padding-top:50px; padding-bottom:50px; text-align:center; color:#fff;}
+.history h2 {padding-top:50px; padding-bottom:10px; padding-left:30%; color:#fff;}
+.history .his-logo {float:left; height:100px; text-align:center; color:#fff; margin-right:10px; }
+.history span {font-size:100px; text-align:center; color:#fff;}
+.history p {color:#fff; text-align:left;} 
+.history .img-left {margin-left:25%; height:180px; color:#fff; margin-top:80px; border-radius:0% 25%;}
+.history .img-right {margin-left:35%; height:230px; color:#fff; margin-top:40px; border-radius:25% 0%;}
+.technology {background-image:url("pictures/tech-bg.jpg"); background-repeat:no-repeat; background-size:cover; color:#fff; padding:50px; padding-bottom:100px;}
+.technology .row{margin-top:50px;}
+.technology img{float:left; height:100px; margin-right:20px;}
+.technology h1{padding:25px 0px; text-align:center;}
+.technology h2{margin-top:0px;}
+
+.brands {background-color:#2f2f2f; padding-bottom:100px; height:600px;}
+.brands h1 {padding-top:50px; padding-bottom:50px; text-align:center; color:#fff; font-weight:bold;}
+.brands .slider{width:90%; margin-left:6%;}
+.brands .slider img{margin-top:50px; float:left; width:15%; margin-left:2%; margin-right:2%; transition:0.5s; filter:blur(2px);  border-radius:50%;}
+.brands .slider img:hover{filter:none;}
+.brands .slider .carousel-control {background:none; margin-left:85%; margin-top:22%; margin-right:5%; color:#fff; width:5%;}
+.team {background-color:#232323; padding-bottom:100px;}
+.team h1 {margin-top:50px; text-align:center; font-weight:bold; margin-bottom:50px; color:#fff;}
+.team .slider .carousel-control {background:none; margin-left:85%; margin-top:22%; margin-right:5%; color:#fff; width:5%;}
+.team img {margin:0px auto; display:block; height:250px; border:3px solid #fff; border-radius:50%; color:#fff;}
+.team h2 {font-weight:bold; color:#fff; }
+.team p {margin-top:10px;  font-size:13px; color:#a7701d;}
+.team p:nth-child(3) {margin-top:10px;  font-size:12px; color:#fff;}
+.team p:nth-child(3) span {margin-top:10px;  font-size:12px; color:#a7701d;}
+.team a {margin-top:10px; font-size:15px; color:#fff; transition:0.5s;}	 
+.team a:hover {margin-top:10px; font-size:16px; color:#a7701d; text-decoration:none; }	 
+
+
+footer {background-color:#232323; height:70px; width:100%; border-top:2px solid #fff; }
+footer p {line-height:68px; text-align:center; color:#fff; padding:0; margin:0px;}
+footer span {color:#a7701d;}
+
+	</style>
+
+	</head>
+	
+	<body>
+	
+	<div class="responsive-head">
+		<div class="col-xs-12 res-d">
+			<a href="home.html"><img class="responsive-logo"src="pictures/logo.png"></a>
+			<h4 class="heading">Aura Watches</h4>	
+		</div>
+		
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+			<ul class="dropdown-menu">
+				<li><a href="home.html#myCarousel">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="home.html#locator">Store Locator</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		
+	<header class="header1" id="header">
+	
+			<script>
+				window.onscroll = function() {myFunction()};
+				function myFunction() {
+					if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) 
+						{
+					document.getElementById("header").className = "header2";
+					document.getElementById("mini-head").className = "mini-head1";
+					}
+					else 
+						{
+					document.getElementById("header").className = "header1";
+					document.getElementById("mini-head").className = "mini-head";
+					}
+						}
+			</script>
+					
+		<div class="container-fluid">
+						
+							
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="header-element">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h2 class="heading">Aura Watches</h2>	
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-11 col-sm-6 col-xs-12 ">
+				
+				<div id="mini-head" class="col-xs-12 mini-head">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h3 class="heading">Aura Watches</h3>	
+				</div>	
+				
+				<div class="nav">
+					<ul>
+						<li class="left"><a href="home.html">Home</a></li>
+						<li class="left"><a href="products.html">Products</a></li>
+						<li class="left"><a href="home.html#locator">Store Locator</a></li>
+						<li class="left"><a href="about.html">About Us</a>
+							<ul  class="nav-effect">
+								<li>History</li>
+								<li>Brands</li>
+							</ul>		
+						</li>
+						<li class="left"><a href="contact.html">Contact</a></li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</header>
+		
+		
+	<div class="container-fluid">  
+		<div class="main-slide">
+			<div class="slider">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">		
+					
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="pictures/about-1.jpg" alt="Los Angeles" style="width:100%;">
+						</div>
+					
+						<div class="item">
+							<img src="pictures/about-2.jpg" alt="Chicago" style="width:100%;">
+						</div>
+						
+						<div class="item">
+							<img src="pictures/about-3.jpg" alt="New york" style="width:100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div id="history" class="history">
+		<div class="container-fluid">
+		<h1>About Us</h1>
+			<div class="col-lg-6 col-sm-12 col-xs-12 ">
+				<div class="motive">
+					<h2>History</h2>
+					<img class="his-logo"src="pictures/logo.png">
+					<p>We aim to offer our customers a variety of the latest Watches. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products. We offer all of this while providing excellent customer service and friendly support.</p>
+				</div>
+				
+					<div class="motive">
+					<h2>Company</h2>
+					<img class="his-logo"src="pictures/logo.png">
+					<p>We aim to offer our customers a variety of the latest Watches. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products. We offer all of this while providing excellent customer service and friendly support. We aim to offer our customers a variety of the latest Watches. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products.</p>
+				</div>
+				
+				<div class="achievement">
+					<h2>Motive</h2>
+					<img class="his-logo"src="pictures/logo.png">
+					<p>We always keep an eye on the latest trends in Sneaker and put our customers’ wishes first. That is why we have satisfied customers all over  the world, and are thrilled  to be a part of the Sneaker industry. so we  hope you will enjoy our products </p>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-sm-12 col-xs-12 filter">
+				<img class="img-left"src="pictures/about-us-1.jpg">
+				<img class="img-right"src="pictures/about-us-2.jpg">
+				<img class="img-left"src="pictures/about-us-4.jpg">
+			</div>
+		</div>
+	</div>
+	
+		
+	<div id="technology" class="technology">
+		<div class="container-fluid">
+		<h1>Technologies</h1>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 col-xs-12 ">
+					<img src="pictures/tech-1.png">
+					<h2>Mechanism</h2>
+					<p>We aim to offer our customers a variety of the latest Watches. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products.</p>
+				</div>
+				
+				<div class="col-lg-6 col-sm-12 col-xs-12 ">
+					<img src="pictures/tech-2.png">
+					<h2>Material</h2>
+					<p>We always keep an eye on the latest trends in Sneaker and put our customers’ wishes first. That is why we have satisfied customers all over  the world, </p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 col-xs-12 ">
+					<img src="pictures/tech-3.png">
+					<h2>Quality</h2>
+					<p>We aim to offer our customers a variety of the latest Watches. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products.</p>
+				</div>
+				
+				<div class="col-lg-6 col-sm-12 col-xs-12 ">
+					<img src="pictures/tech-4.png">
+					<h2>Durability</h2>
+					<p>We always keep an eye on the latest trends in Sneaker and put our customers’ wishes first. That is why we have satisfied customers all over  the world, and are thrilled  to be a part of the Sneaker industry. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="brands">
+		<div class="container-fluid">  
+			<h1>Partners Brands</h1>
+			<div class="slider">
+				<div id="myCarousel1" class="carousel slide slide1" data-ride="carousel">		
+					
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="pictures/brand-1.jpg">
+							<img src="pictures/brand-2.jpg">
+							<img src="pictures/brand-3.jpg">
+							<img src="pictures/brand-4.jpg">
+							<img src="pictures/brand-5.jpg">
+						</div>
+					
+						<div class="item">
+							<img src="pictures/brand-6.jpg">
+							<img src="pictures/brand-7.jpg">
+							<img src="pictures/brand-8.jpg">
+							<img src="pictures/brand-9.jpg">
+							<img src="pictures/brand-10.jpg">
+						</div>
+						
+						<div class="item">
+							<img src="pictures/brand-11.jpg">
+							<img src="pictures/brand-12.jpg">
+							<img src="pictures/brand-13.jpg">
+							<img src="pictures/brand-14.jpg">
+						</div>
+					</div>
+				
+				<a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#myCarousel1" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="team">
+		<div class="container">  
+			<h1>Team</h1>
+			<div class="slider">
+				<div id="myCarousel2" class="carousel slide slide1" data-ride="carousel">		
+					
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						
+						<div class="item active">
+							<div class="col-lg-6 col-sm-6 col-xs-12 ">
+								<img src="pictures/profile-3.jpg">
+							</div>
+							<div class="col-lg-6 col-sm-6 col-xs-12 ">
+								<h2>Muhammad Sabir</h2>
+								<p>Cheif Executive Officer</p>
+								<p><span>About:</span> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"</p>
+								<p><a href="mailto:muhammadsabir@aura-watches.com" target="_top">Email: muhammadsabir@aura-watches.com</a></p>
+								<p><a href="tel:5551234567">Call: (555)123-4567</a></p>
+							</div>
+						</div>
+						
+						<div class="item ">
+							<div class="col-lg-6 col-sm-6 col-xs-12 ">
+								<img src="pictures/profile-1.jpg">
+							</div>
+							<div class="col-lg-6 col-sm-6 col-xs-12 team-res">
+								<h2>Muhammad Hatim</h2>
+								<p>Digital Marketing Manager</p>
+								<p><span>About:</span> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"</p>
+								<p><a href="mailto:rehmanqureshi@aura-watches.com" target="_top">Email: Rehmanqureshi@aura-watches.com</a></p>
+								<p><a href="tel:5553216547">Call: (555)321-6547</a></p>
+							</div>
+						</div>
+					
+						
+						<div class="item">
+							<div class="col-lg-6 col-sm-6 col-xs-12 ">
+								<img src="pictures/profile-2.jpg">
+							</div>
+							<div class="col-lg-6 col-sm-6 col-xs-12 ">
+								<h2>Asad ullah Butt</h2>
+								<p>Sales Executive</p>
+								<p><span>About</span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"</p>
+								<p><a href="mailto:faizanshreef@aura-watches.com" target="_top">Email: Faizanshreef@aura-watches.com</a></p>
+								<p><a href="tel:5555438642">Call: (555)543-8642</a></p>
+							</div>
+						</div>
+					</div>
+					
+					<a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a class="right carousel-control" href="#myCarousel2" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+		
+		
+		
+		
+	<footer>
+		<p>Copyright © 2020 <span>AuraWatches. </span> All Right Reserved.</p>
+	</footer>
+
+	</body>
+		
+</html>

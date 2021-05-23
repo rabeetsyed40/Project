@@ -1,0 +1,526 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+
+    <title>Aura Watches | Best Watches You Can Get</title>
+	
+	<link rel = "icon" href ="pictures/logo1.png" type = "image/x-icon"> 
+	
+		<style>
+* {font-family: 'Oxanium', cursive; scroll-behavior:smooth;}
+.container-fluid {padding:0px; margin:0px;}
+.header1 {height:140px; width:100%; position:fixed; top:0px; transition:0.5s;  z-index:2;}
+.header2 {height:140px; width:100%; position:fixed; top:0px;  transition:0.5s;  z-index:2; background-color:#000; border-bottom:2px solid #fff; margin-top:-70px;}
+.responsive-head {display:none;}
+.mini-head {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:0; }
+.mini-head1 {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:1;}
+.head-logo {height:50px; margin-top:-10px; }
+.header-element {width:300px; position:absolute; left:50%; margin-left:-150px; }
+.heading{font-weight:bold; text-align:center; color:#fff; display:inline-block; line-height:35px; margin-left:20px;}
+.left {float:left;}
+.nav{position:absolute; left:-350px; top:70px; margin-left:50%; text-align:center;}
+.nav ul li {list-style-type:none; width:150px; line-height:70px; Font-size:18px; color:#fff; font-weight:bold;}
+.nav ul li a {transition:0.5s; color:#fff;}
+.nav ul li a:hover {text-decoration:none;}
+.nav ul li ul{padding:0px;}
+.nav ul li ul{display:none;}
+.nav ul li a:hover{color:#a7701d;}
+.nav ul li:hover ul{display:block;}
+.nav .nav-effect li{ margin-left:-10px; line-height:50px; padding-left:20px; text-align:left; width:200px; background-color:#232323; height:50px; font-size:15px;}
+.nav ul li ul li:hover{transition:0.7s; display:block; background-color:#000; color:#fff; border-bottom:2px solid #fff; box-sizing:border-box;}
+
+@media only screen and (max-width:1024px) { 
+.nav{width:700px; position:absolute; left:80px; top:70px;  text-align:center;}
+.nav ul li {list-style-type:none; width:auto; padding-right:20px; line-height:70px; Font-size:16px; color:#fff; font-weight:bold;}	
+}
+
+
+@media only screen and (max-width:768px) {
+.Products .buttons {margin-left:-300px !important;}
+.Products button {width:150px !important;}
+}
+
+@media only screen and (max-width:600px) { 
+#header {display:none;}
+.responsive-head {display:block; height:70px; width:100%; background-color:#000; position:fixed; top:0px; z-index:2;}
+.res-d {width:300px; position:absolute; left:10%;}
+.responsive-head img {height:45px; padding:0px;}
+.responsive-head h4 {line-height:50px; margin-left:10px;}
+.dropdown {position:absolute; right:5%;}
+.dropdown button{font-size:30px; background:none; border:none; margin-top:15px;}
+.dropdown button open{font-size:30px; background:none; border:none; margin-top:15px;}
+.dropdown-menu {margin-left:-100px; margin-top:20px; background-color:#232323;}
+.dropdown-menu li a {color:#fff;}
+.Products .buttons {margin-left:-140px !important;}
+.Products button {width:140px !important;}
+ footer p{font-size:12px !important;}
+ }
+
+.bg {background-image:url(pictures/team-bg.jpg); background-repeat:no-repeat; background-size:cover; height:400px;}
+.Products {overflow:hidden; width:100%; padding-top:50px; padding-bottom:100px; background-color:#232323;}		
+.Products h1{padding-bottom:50px; text-align:center; color:#fff;}		
+.Products .buttons { position:absolute; left:50%; margin-left:-400px;}		
+#Products { padding-top:150px;}		
+.sports, .premier, .top-r {margin-top:30px;}
+.Products button  {height:50px; width:200px; font-size:18px; background:none; border:1px solid gray; color:#fff; margin-left:-4px; transition:0.2s;}		
+.Products button:hover {color:#a7701d;}		
+.Products button:focus {border:3px solid #a7701d; color:#a7701d; outline:none;}		
+.Products .row {margin-top:100px; }		
+.Products .pd-img, .Products .pd-hover  {position:sticky;height:200px;}	
+
+.pd-descrip {text-align: center; height:300px; width:230px; background-color:#232323; margin-left:2.5%; margin-right:2.5%; padding:15px; transition:0.5s; overflow:hidden;}
+.pd-descrip .sale{position:absolute; padding:5px 10px; background:#a7701d; color:#fff; border-radius:2px; top:25px; left:45px; z-index:1;}
+.pd-descrip p{color:gray; padding-top:5px;}
+.pd-descrip p span{color:#a7701d;}
+.pd-descrip .name{font-weight:100; color:#fff; transition:0.5s; }
+.pd-descrip h4 {font-weight:bold; color:#a7701d;}
+.pd-descrip h4:hover{color:#a7701d;}
+.pd-descrip h4 span{font-weight:100; color:gray; text-decoration:line-through;}
+.pd-descrip:hover {height:500px; box-shadow: 0px 3px 10px 5px #00000030;}
+.pd-descrip:hover .pd-img {display:none;}
+.pd-hover {display:none; }
+.pd-descrip:hover .pd-hover{display:block;}
+.pd-descrip button {height:50px; width:200px; font-size:18px; background-color:#2f2f2f; color:gray; border:none; transition:0.5s; border-radius:2px;	}
+.pd-descrip button:hover {background-color:#a7701d; color:#fff;}
+footer {background-color:#232323; height:70px; width:100%; border-top:2px solid #fff; }
+footer p {line-height:68px; text-align:center; color:#fff; padding:0; margin:0px;}
+footer span {color:#a7701d;}
+
+
+
+	</style>
+
+	</head>
+	
+	<body>
+	
+	
+	<div class="responsive-head">
+		<div class="col-xs-12 res-d">
+			<a href="home.html"><img class="responsive-logo"src="pictures/logo.png"></a>
+			<h4 class="heading">Aura Watches</h4>	
+		</div>
+		
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+			<ul class="dropdown-menu">
+				<li><a href="home.html#myCarousel">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="home.html#locator">Store Locator</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		
+	<header class="header1" id="header">
+	
+			<script>
+				window.onscroll = function() {myFunction()};
+				function myFunction() {
+					if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) 
+						{
+					document.getElementById("header").className = "header2";
+					document.getElementById("mini-head").className = "mini-head1";
+					}
+					else 
+						{
+					document.getElementById("header").className = "header1";
+					document.getElementById("mini-head").className = "mini-head";
+					}
+						}
+			</script>
+					
+		<div class="container-fluid">
+						
+							
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="header-element">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h2 class="heading">Aura Watches</h2>	
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-11 col-sm-6 col-xs-12 ">
+				
+				<div id="mini-head" class="col-xs-12 mini-head">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h3 class="heading">Aura Watches</h3>	
+				</div>	
+				
+				<div class="nav">
+					<ul>
+						<li class="left"><a href="home.html">Home</a></li>
+						<li class="left"><a href="products.html">Products</a></li>
+						<li class="left"><a href="home.html#locator">Store Locator</a></li>
+						<li class="left"><a href="About.html">About Us</a>
+							<ul  class="nav-effect">
+								<li>History</li>
+								<li>Brands</li>
+							</ul>		
+						</li>
+						<li class="left"><a href="contact.html">Contact</a></li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</header>
+		
+		
+		
+	<div class="container-fluid">  
+		<div class="bg">
+			
+		</div>
+	</div>
+	
+	
+	<div class="Products">
+		<h1>Products</h1>
+		<div class="container">
+		
+			<div class="buttons">	
+				<button id="btn1" autofocus>Show all</button>
+				<button id="btn2">Sports</button>
+				<button id="btn3">Premier</button>
+				<button id="btn4">Top Rated</button>
+			</div>
+			
+			<div id="products">
+			
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<p class="sale">-7%</p>
+						<img class="pd-img" src="pictures/pd-1.jpg">
+						<img class=" pd-hover" src="pictures/pd-1-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Acer Aspire AIO</h4>
+						<h4>$86.00  <span>$92.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd1.html';">View</Button>							
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 premier">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-2.jpg">
+						<img class=" pd-hover" src="pictures/pd-2-hover.jpg">
+						<p>Cartier, Citizen</p>
+						<h4 class="name">Acer Aspire E15</h4>
+						<h4>$602.00</h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd2.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 top-r">
+					<div class="pd-descrip">
+						<p class="sale">-7%</p>
+						<img class="pd-img" src="pictures/pd-4.jpg">
+						<img class=" pd-hover" src="pictures/pd-4-hover.jpg">
+						<p>Movado, Omega</p>
+						<h4 class="name">Microsoft Surface Pro 3</h4>
+						<h4>$80.00  <span>$86.00</span></h4>
+						<p><span>&#9733; &#9733; </span>&#9733; &#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd4.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<p class="sale">-20%</p>
+						<img class="pd-img" src="pictures/pd-5.jpg">
+						<img class=" pd-hover" src="pictures/pd-5-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Acer R240HY Bidx</h4>
+						<h4>$98.00  <span>$120.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd5.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<p class="sale">-4%</p>
+						<img class="pd-img" src="pictures/pd-6.jpg">
+						<img class=" pd-hover" src="pictures/pd-6-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Acer Aspire Desktop</h4>
+						<h4>$68.00  <span>$74.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; </span>&#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd6.html';">View</Button>
+					</div>	
+				</div>	
+
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-7.jpg">
+						<img class=" pd-hover" src="pictures/pd-7-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Rado Galaxy A</h4>
+						<h4>$241.00</h4>
+						<p><span>&#9733; </span>&#9733; &#9733; &#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd7.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 premier">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-8.jpg">
+						<img class=" pd-hover" src="pictures/pd-8-hover.jpg">
+						<p>Premier, Luxury</p>
+						<h4 class="name">Acer Aspire AIO</h4>
+						<h4>$98.00</h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd8.html';">View</Button>
+					</div>	
+				</div>
+								
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-3.jpg">
+						<img class=" pd-hover" src="pictures/pd-3-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Dell Inspiron 24</h4>
+						<h4>$1202.00</h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; </span> &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd3.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-7.jpg">
+						<img class=" pd-hover" src="pictures/pd-7-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Rado Galaxy A</h4>
+						<h4>$241.00</h4>
+						<p><span>&#9733; </span>&#9733; &#9733; &#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd7.html';">View</Button>
+					</div>	
+				</div>		
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 premier">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-6.jpg">
+						<img class=" pd-hover" src="pictures/pd-6-hover.jpg">
+						<p>Premier, Luxury</p>
+						<h4 class="name">Acer Aspire Desktop</h4>
+						<h4>$68.00  <span>$74.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; </span>&#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd6.html';">View</Button>
+					</div>	
+				</div>
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 premier">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-8.jpg">
+						<img class=" pd-hover" src="pictures/pd-8-hover.jpg">
+						<p>Premier, Luxury</p>
+						<h4 class="name">Acer Aspire AIO</h4>
+						<h4>$98.00</h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd8.html';">View</Button>
+					</div>	
+				</div>
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 top-r">
+					<div class="pd-descrip">
+						<p class="sale">-20%</p>
+						<img class="pd-img" src="pictures/pd-5.jpg">
+						<img class=" pd-hover" src="pictures/pd-5-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Acer R240HY Bidx</h4>
+						<h4>$98.00  <span>$120.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd5.html';">View</Button>
+					</div>	
+				</div>	
+							
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-1.jpg">
+						<img class=" pd-hover" src="pictures/pd-1-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Acer Aspire AIO</h4>
+						<h4>$86.00  <span>$92.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd1.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 premier">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-7.jpg">
+						<img class=" pd-hover" src="pictures/pd-7-hover.jpg">
+						<p>Premier, Luxury</p>
+						<h4 class="name">Rado Galaxy A</h4>
+						<h4>$241.00</h4>
+						<p><span>&#9733; </span>&#9733; &#9733; &#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd7.html';">View</Button>
+					</div>	
+				</div>
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 top-r">
+					<div class="pd-descrip">
+						<p class="sale">-7%</p>
+						<img class="pd-img" src="pictures/pd-1.jpg">
+						<img class=" pd-hover" src="pictures/pd-1-hover.jpg">
+						<p>Movado, Luxury</p>
+						<h4 class="name">Acer Aspire AIO</h4>
+						<h4>$86.00  <span>$92.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; </span>&#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd1.html';">View</Button>
+					</div>	
+				</div>													
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<p class="sale">-7%</p>
+						<img class="pd-img" src="pictures/pd-4.jpg">
+						<img class=" pd-hover" src="pictures/pd-4-hover.jpg">
+						<p>Sports, Omega</p>
+						<h4 class="name">Microsoft Surface Pro 3</h4>
+						<h4>$80.00  <span>$86.00</span></h4>
+						<p><span>&#9733; &#9733; </span>&#9733; &#9733; &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd4.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-3.jpg">
+						<img class=" pd-hover" src="pictures/pd-3-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Dell Inspiron 24</h4>
+						<h4>$1202.00</h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; </span> &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd3.html';">View</Button>
+					</div>	
+				</div>	
+									
+				<div class="col-lg-3 col-sm-4 col-xs-12 sports">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-2.jpg">
+						<img class=" pd-hover" src="pictures/pd-2-hover.jpg">
+						<p>Cartier, Citizen</p>
+						<h4 class="name">Acer Aspire E15</h4>
+						<h4>$602.00</h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd2.html';">View</Button>
+					</div>	
+				</div>	
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 premier">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-3.jpg">
+						<img class=" pd-hover" src="pictures/pd-3-hover.jpg">
+						<p>Premier, Luxury</p>
+						<h4 class="name">Dell Inspiron 24</h4>
+						<h4>$1202.00</h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; </span> &#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd3.html';">View</Button>
+					</div>	
+				</div>
+				
+				<div class="col-lg-3 col-sm-4 col-xs-12 top-r">
+					<div class="pd-descrip">
+						<img class="pd-img" src="pictures/pd-6.jpg">
+						<img class=" pd-hover" src="pictures/pd-6-hover.jpg">
+						<p>Sports, Luxury</p>
+						<h4 class="name">Acer Aspire Desktop</h4>
+						<h4>$68.00  <span>$74.00</span></h4>
+						<p><span>&#9733; &#9733; &#9733; &#9733; </span>&#9733;</p>
+						<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<Button onclick="location.href = 'pd6.html';">View</Button>
+					</div>	
+				</div>	
+			</div>
+		
+		<script>
+			
+			$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("div.sports").show(500);
+				$("div.premier").show(500);
+				$("div.top-r").show(500);
+			});
+			});
+					
+			$(document).ready(function(){
+			$("#btn2").click(function(){
+				$("div.sports").show(500);
+				$("div.premier").hide(500);
+				$("div.top-r").hide(500);
+			});
+			});
+				
+			$(document).ready(function(){
+			$("#btn3").click(function(){
+				$("div.sports").hide(500);
+				$("div.premier").show(500);
+				$("div.top-r").hide(500);
+			});
+			});
+				
+			$(document).ready(function(){
+			$("#btn4").click(function(){
+				$("div.sports").hide(500);
+				$("div.premier").hide(500);
+				$("div.top-r").show(500);
+			});
+			});
+			
+		</script>
+
+		
+		
+		
+		
+		
+		</div>	
+	</div>	
+
+	
+	
+	<footer>
+		<p>Copyright © 2020 <span>AuraWatches. </span> All Right Reserved.</p>
+	</footer>
+	
+	</body>
+		
+</html>

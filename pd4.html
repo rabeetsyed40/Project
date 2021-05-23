@@ -1,0 +1,249 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+
+    <title>Aura Watches | Best Watches You Can Get</title>
+	
+	<link rel = "icon" href ="pictures/logo1.png" type = "image/x-icon"> 
+	
+		<style>
+* {font-family: 'Oxanium', cursive; scroll-behavior:smooth;}
+.container-fluid {padding:0px; margin:0px;}
+.header1 {height:140px; width:100%; position:fixed; top:0px; transition:0.5s;  z-index:2;}
+.header2 {height:140px; width:100%; position:fixed; top:0px;  transition:0.5s;  z-index:2; background-color:#000; border-bottom:2px solid #fff; margin-top:-70px;}
+.responsive-head {display:none;}
+.mini-head {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:0; }
+.mini-head1 {margin-left:20px; height:40px; margin-top:70px; transition:0.5s; opacity:1;}
+.head-logo {height:50px; margin-top:-10px; }
+.header-element {width:300px; position:absolute; left:50%; margin-left:-150px; }
+.heading{font-weight:bold; text-align:center; color:#fff; display:inline-block; line-height:35px; margin-left:20px;}
+.left {float:left;}
+.nav{position:absolute; left:-350px; top:70px; margin-left:50%; text-align:center;}
+.nav ul li {list-style-type:none; width:150px; line-height:70px; Font-size:18px; color:#fff; font-weight:bold;}
+.nav ul li a {transition:0.5s; color:#fff;}
+.nav ul li a:hover {text-decoration:none;}
+.nav ul li ul{padding:0px;}
+.nav ul li ul{display:none;}
+.nav ul li a:hover{color:#a7701d;}
+.nav ul li:hover ul{display:block;}
+.nav .nav-effect li{ margin-left:-10px; line-height:50px; padding-left:20px; text-align:left; width:200px; background-color:#232323; height:50px; font-size:15px;}
+.nav ul li ul li:hover{transition:0.7s; display:block; background-color:#000; color:#fff; border-bottom:2px solid #fff; box-sizing:border-box;}
+
+@media only screen and (max-width:1024px) { 
+.nav{width:700px; position:absolute; left:80px; top:70px;  text-align:center;}
+.nav ul li {list-style-type:none; width:auto; padding-right:20px; line-height:70px; Font-size:16px; color:#fff; font-weight:bold;}	
+.bg {height:1000px !important; }
+.thumbnails {height:100px !important; }
+.view-box {margin-top:50px; margin-left:50px; height:350px !important; width:350px !important; border:1px solid #fff; overflow:hidden;}
+.view-box .pd-img {height:350px !important; width:350px !important;}
+.pd-descrip .pd-about{padding-right:50px !important;}
+}
+
+
+@media only screen and (max-width:768px) {
+.bg {height:900px !important; }
+.view-box {margin-top:50px; margin-left:50px; height:250px !important; width:250px !important; border:1px solid #fff; overflow:hidden;}
+.view-box .pd-img {height:250px !important; width:250px !important;}
+.pd-descrip {margin-top:50px !important; color:#fff;}
+.pd-descrip .pd-about{padding-right:5px !important;}
+.pd-descrip h1{font-size:30px; margin-top:00px !important;}
+
+}
+
+@media only screen and (max-width:600px) { 
+#header {display:none;}
+.responsive-head {display:block; height:70px; width:100%; background-color:#000; position:fixed; top:0px; z-index:2;}
+.res-d {width:300px; position:absolute; left:10%;}
+.responsive-head img {height:45px; padding:0px;}
+.responsive-head h4 {line-height:50px; margin-left:10px;}
+.dropdown {position:absolute; right:5%;}
+.dropdown button{font-size:30px; background:none; border:none; margin-top:15px;}
+.dropdown button open{font-size:30px; background:none; border:none; margin-top:15px;}
+.dropdown-menu {margin-left:-100px; margin-top:20px; background-color:#232323;}
+.dropdown-menu li a {color:#fff;}
+.bg {height:1200px !important; }
+.view-box {margin-left:10px !important; height:250px !important; width:250px !important; border:1px solid #fff; overflow:hidden;}
+.view-box .pd-img {height:250px !important; width:250px !important;}
+.thumbnails {height:80px !important; float:left; position:relative; left:10px !important;}
+footer p{font-size:12px !important;}
+}
+@media only screen and (max-width:320px) { 
+.view-box {height:200px !important; width:200px !important;}
+.view-box .pd-img {height:200px !important; width:200px !important;}
+.bg {height:1200px !important; }
+}
+
+.bg {background-image:url(pictures/team-bg.jpg); background-repeat:no-repeat; background-size:cover; height:1100px; padding-bottom:100px;}
+.details {width:80%; background-color:2f2f2f; position:absolute; top:180px; left:10%; border:2px solid #fff; border-radius:10px; padding-bottom: 50px;}
+.view-box {margin-top:50px; margin-left:50px; height:450px; width:450px; border:1px solid #fff; overflow:hidden;}
+.view-box .pd-img {height:450px; width:450px;}
+.thumbnails {height:140px; float:left; position:relative; left:50px; top:20px; margin-right:20px; cursor:pointer; margin-bottom:50px;}
+#b1 {border:1px solid #fff;}
+.pd-descrip {margin-top:100px; color:#fff;}
+.pd-descrip h1{margin-top:100px; color:#fff;}
+.pd-descrip p:nth-child(2) {color:#a7701d; margin-top:-10px;}
+.pd-descrip h4{color:#a7701d; font-size:25px;}
+.pd-descrip h4 span{color:gray; font-size:20px; text-decoration:line-through;}
+.pd-descrip p span{color:#a7701d; font-size:17px;}
+.pd-descrip .pd-about{color:gray; padding-right:150px;}
+.pd-descrip button {margin-top:20px; height:60px; width:200px; font-size:18px; background-color:#232323; color:gray; border:none; transition:0.5s; border-radius:5px;	}
+.pd-descrip button:hover {background-color:#a7701d; color:#fff;}
+
+
+footer {background-color:#232323; height:70px; width:100%; border-top:2px solid #fff; }
+footer p {line-height:68px; text-align:center; color:#fff; padding:0; margin:0px;}
+footer span {color:#a7701d;}
+	</style>
+
+	</head>
+	
+	<body>
+	
+	
+	<div class="responsive-head">
+		<div class="col-xs-12 res-d">
+			<a href="home.html"><img class="responsive-logo"src="pictures/logo.png"></a>
+			<h4 class="heading">Aura Watches</h4>	
+		</div>
+		
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+			<ul class="dropdown-menu">
+				<li><a href="home.html#myCarousel">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="home.html#locator">Store Locator</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		
+	<header class="header1" id="header">
+	
+			<script>
+				window.onscroll = function() {myFunction()};
+				function myFunction() {
+					if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) 
+						{
+					document.getElementById("header").className = "header2";
+					document.getElementById("mini-head").className = "mini-head1";
+					}
+					else 
+						{
+					document.getElementById("header").className = "header1";
+					document.getElementById("mini-head").className = "mini-head";
+					}
+						}
+			</script>
+					
+		<div class="container-fluid">
+						
+							
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="header-element">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h2 class="heading">Aura Watches</h2>	
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-11 col-sm-6 col-xs-12 ">
+				
+				<div id="mini-head" class="col-xs-12 mini-head">
+					<a href="home.html"><img class="head-logo"src="pictures/logo.png"></a>
+					<h3 class="heading">Aura Watches</h3>	
+				</div>	
+				
+				<div class="nav">
+					<ul>
+						<li class="left"><a href="home.html">Home</a></li>
+						<li class="left"><a href="products.html">Products</a></li>
+						<li class="left"><a href="home.html#locator">Store Locator</a></li>
+						<li class="left"><a href="About.html">About Us</a>
+							<ul  class="nav-effect">
+								<li>History</li>
+								<li>Brands</li>
+							</ul>		
+						</li>
+						<li class="left"><a href="contact.html">Contact</a></li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</header>
+		
+		
+		
+	<div class="container-fluid">  
+		<div class="bg">
+			
+			<div class="details">
+			
+				<div class="col-lg-6 col-sm-7 col-xs-12 ">
+						<div class="view-box">
+							<img class="pd-img" id="t1" src="pictures/pd-4.jpg">
+							<img class=" pd-img" id="t2" src="pictures/pd-4-hover.jpg">
+						</div>	
+						<img class="thumbnails" id="b1" src="pictures/pd-4.jpg">
+						<img class="thumbnails" id="b2" src="pictures/pd-4-hover.jpg">
+				<script>
+				$(document).ready(function(){
+				$("#b1").click(function(){
+					$("#t1").show(500);
+					$("#t2").hide(500);
+					$("#b1").css("border", "1px solid #fff");
+					$("#b2").css("border", "none");
+					
+				});
+				$("#b2").click(function(){
+					$("#t1").hide(500);
+					$("#t2").show(500);
+					$("#b1").css("border", "none");
+					$("#b2").css("border", "1px solid #fff");
+				});
+				});
+				</script>
+				
+				</div>	
+				
+				<div class="col-lg-6 col-sm-5 col-xs-12">
+					<div class="pd-descrip">
+						<h1 class="name">Microsoft Surface Pro 3</h1>
+						<p>Movado, Omega</p>
+						<p><span>&#9733; &#9733;</span> &#9733; &#9733; &#9733;</p>
+						</p>Product Code: Watches </p>
+						</p>Available: In Stock </p>
+						<h4>$80.00 </h4>
+						<p class="pd-about">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs pd-about Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs</p>
+						<button>Download Offline</button>							
+					</div>	
+				</div>	
+				
+				
+		
+		</div>	
+		</div>	
+	</div>	
+	
+	
+	<footer>
+		<p>Copyright © 2020 <span>AuraWatches. </span> All Right Reserved.</p>
+	</footer>
+	
+	</body>
+		
+</html>
